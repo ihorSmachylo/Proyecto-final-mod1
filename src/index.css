@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: relative;
+}
+.nav-menu{
+    background-color: #29292c;
+    color:#f1edfd;
+    font-family: droid;
+    position:fixed ;
+    box-shadow: 4px 0 10px -5px rgba(0,0,0,.75);
+    z-index: 99;
+    width:100%;
+}
+.nav-container-list{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.nav-container-list-item:first-child a{
+    border-right: 10px solid #000;
+    padding-right: 5px;
+}
+.nav-container-list-item:nth-child(2) a{
+    border-right: 10px solid #ce757b;
+    padding-right: 5px;
+}
+.nav-container-list-item:nth-child(3) a{
+    border-right: 10px solid #fdf8ed;
+    padding-right: 5px;
+}
+.nav-container-list-item:nth-child(4) a{
+    border-right: 10px solid #dfcd79;
+    padding-right: 5px;
+}
+@media (min-width: 1024px) {
+    .nav-menu .nav-container-list {
+        flex-direction:column;
+        line-height: 45px;
+    }
+}
+@media (min-width: 1024px) {
+    .nav-menu {
+        width:11vw;
+        height: 100vh;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+        opacity: .7;
+    }
+}
+
+.inicio-container{
+    margin-left: 11vw;
+    background-color: #29292c;
+}
+.inicio-container-info1{
+    display: flex;
+    padding-right: 10vw;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25vh;
+}
+.inicio-container h2 {
+
+    color:#ffff;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8vw;
+    padding-top:20px;
+    font-size: 1.5rem;
+    padding-bottom: 2vh;
+    font-weight: 600;
+}
+.inicio-container-info h3 {
+    color:#ffff;
+    justify-content: center;
+    /* padding-right: 8vw; */
+    font-weight: 700;
+    font-size: 6rem;
+    
+}
+.inicio-container-info1 img {
+    width: 500px; /* Ajusta el ancho según tus necesidades */
+    height: 550px; /* Ajusta la altura según tus necesidades */
+  }
+
+.text-movimineto{
+    font-size: 1.5rem;
+    color: #f1edfd;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 93ch;
+    animation:typing 5s steps(93),blink 10s infinite step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing {
+    from {width: 0;}
+}
+@keyframes blink{
+    50%{ border-color:transparent}
+}
+.about-container{
+    margin-left: 11vw;
+    background-color: #ce757b;
+}
+.about-container-info1{
+    display: flex;
+    justify-content: space-between;
+}
+.about-container h2 {
+
+    color:#29292c;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8vw;
+    padding-top:20px;
+    font-size: 1.5rem;
+    padding-bottom: 2vh;
+    font-weight: 600;
+}
+.about-container-info1 p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.puntos{
+    text-decoration-line:  underline;
+    text-decoration-style: wavy;
+}
+.habilidades{
+    margin-bottom: 10vh;
+}
+.about{
+    margin-bottom: 10vh;
+}
+.inicio{
+    margin-bottom: 10vh;
+}
+.about-skills_list{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 5vh;
+    /* padding-left: 8vw; */
+    padding-right: 8vw;
+    padding-bottom: 25vh;
+}
+.about-skills_item{
+   height:100px ;
+   width: 100px;
+}
+
+.skillshtml{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* esto tiene que estar en la  imagen  */
+}
+.proyectos-container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20vh;
+}
+.contacto-container{
+    margin-left: 11vw;
+    background-color: #dfcd79
+}
+
+.contacto-container h2 {
+
+    color:black;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8vw;
+    padding-top:20px;
+    font-size: 1.5rem;
+    /* padding-bottom: 20vh; */
+    font-weight: 600;
+    height: 300px;
+    
+}

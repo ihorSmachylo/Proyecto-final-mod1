@@ -5,13 +5,186 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <title>proeucto final m1</title>
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline text-red-600">
-    Hello world!
-  </h1>
+  <!-- navBAr -->
+  <header>
+    <nav class="nav-menu">
+      <ul class="nav-container-list">
+        <li class="nav-container-list-item">
+          <a href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-container-list-item">
+          <a href="#sobre-mi">Sobre mí</a>
+        </li>
+        <li class="nav-container-list-item">
+          <a href="#proyectos">Proyectos</a>
+        </li>
+        <li class="nav-container-list-item">
+          <a href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+ </header>
+
+<!-- Contenido de la sección "Inicio" -->
+<div id="inicio" class="inicio-container">
+  
+  <div class="inicio-container ">
+    <h2 class="inicio">{inicio}</h2>
+    <div class="inicio-container-info">
+      <div class="inicio-container-info1">
+        <h3>Mi nombre es Ihor y soy desarollador font end Junior</h3>
+        <img src="../src/img/ihor.jpg" alt="foto mia">
+        
+      </div>
+      <div>
+        <span class="text-movimineto">Hola, Bienvenido a mi portfolio, Aqui descubrirar quein soy  y que hago espero que te guste!!</span>
+      </div>
+    </div>
+  </div>
+  
+
+</div>
+
+<!-- Contenido de la sección "Sobre mí" -->
+<div id="sobre-mi" class="about-container">
+  
+  <div class="about-container ">
+    <h2 class="about">{Sobre mí}</h2>
+    <div class="about-container-info">
+      <div class="about-container-info1">
+        <p class="">Soy un <span class="puntos"><b>programador Front end junior</b> </span> al que le esta <span class="puntos"><b>apasionando</b> </span> el mundo del desarollo. Intento mejorar dia a dia con las <span class="puntos"><b>buenas practicas</b> .</span>   </p>
+        
+        </div>
+        <p>Porque me  interesó en el desarrollo: Siempre me han gustado los ordenadores y la informática y se me ha dado bien, pero la programación en sus principios no tanto, pero cada día lucho contra mí mismo para ir mejorando día a día </p>
+      <h2 class="habilidades">{Habilidades tècnicas}</h2>
+      <div class="about-container-skills">
+        <ul class="about-skills_list">
+          <li class="about-skills_item">
+            
+            <img class="skills" src="../src/img/html5-without-wordmark-black-white.svg" alt="">
+            <p></p>
+          </li>
+          <li class="about-skills_item">
+            <img class="skills" src="../src/img/css.png.svg" alt="">
+            <p></p>
+          </li>
+          <li class="about-skills_item">
+            <img class="skills" src="../src/img/js.png" alt="">
+            <p></p>
+          </li>
+          <li class="about-skills_item">
+            <img class="TWskill" src="../src/img/Tailwind_CSS_Logo.svg.png" alt="">
+            <p></p>
+          </li>
+          <li class="about-skills_item">
+            <img class="skills" src="../src/img/node.png" alt="">
+            <p></p>
+          </li>
+          <li class="about-skills_item">
+            <img class="skills" src="../src/img/sql.png" alt="">
+            <p></p>
+          </li>
+          <li class="about-skills_item">
+            <img src="" alt="">
+            <p></p>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="proyectos" class="proyectos-container">
+  <!-- Contenido de la sección "Proyectos" -->
+
+  <div class="proyectos-container">
+    <div id="feature"></div>
+    <form class="w-2/6 flex flex-col items-center gap-6 mt-10 text-lg">
+      <div class="flex gap-6 w-full justify-between">
+        <fieldset class="flex flex-col gap-2">
+          <label>Titulo</label>
+          <input
+            type="text"
+            name="title"
+            id="titleInput"
+            placeholder="Titulo del proyecto"
+            class="border border-slate-500 rounded-md px-2"
+          />
+        </fieldset>
+        <fieldset class="flex flex-col gap-2">
+          <label>Imagen</label>
+          <input
+            type="text"
+            name="imageSrc"
+            id="imageInput"
+            placeholder="URL del proyecto"
+            class="border border-slate-500 rounded-md px-2"
+          />
+        </fieldset>
+      </div>
+      <fieldset class="flex flex-col gap-2 w-full">
+        <label>Descripcion del proyecto </label>
+        <textarea
+          id="description"
+          placeholder="project description"
+          class="border border-slate-500 rounded-md w-full px-2 py-2"
+        ></textarea>
+      </fieldset>
+      <button
+        type="submit"
+        class="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-500"
+      >
+        Añadir proyecto!
+      </button>
+    </form>
+    <div class="grid grid-cols-4 gap-10 mt-10" id="projectsGrid"></div>
+  </div>
+ 
+</div>
+
+<!-- Principio de contacto -->
+<div id="contacto" class="contacto-container">
+  <!-- Contenido de la sección "Contacto" -->
+  <div class="contacto-container ">
+    <h2 class="contacto">{Contacto}</h2>
+      <h3 class="contacto-h3 text-5xl text-center font-semibold">Quedamos en contacto!</h3>
+      
+    
+      <ul class="flex items-center justify-center space-x-20 py-10">
+        <li>
+          <a href="https://www.linkedin.com/in/ihor-smachylo-23a44120b/">
+            <i class="fa-brands fa-linkedin-in fa-bounce text-5xl"
+              style="color: #22231f;"></i></a>
+        </li>
+        <li><a href="https://github.com/ihorSmachylo">
+          <i class="fa-brands fa-github fa-beat text-5xl"
+              style="color: #22231f;"></i>
+            </a>
+          </li>
+        <li><a href="https://www.instagram.com/ihor_smachylo/"><i class="fa-brands fa-instagram fa-spin text-5xl"
+              style="color: #2e343d;"></i></a>
+            </li>
+      </ul>
+      <div class="flex justify-center">
+         <span class="copy"><i class="fa-regular fa-copyright fa-spin text-3xl" style="color: #25282d;"> </i>Echo por Ihor en un dia <span style='font-size:100px;'>&#128556;</span></span>
+      </div>
+     
+    
+  </div>
+
+</div>
+
+<!-- final de contacto  -->
   <script src="index.js"></script>
 </body>
 </html>
